@@ -243,3 +243,16 @@ p {
     padding: 10px;
     border-radius: 5px;
 }
+
+/* Center the Contact Form */
+section {
+    text-align: center;
+}
+
+form {
+    display: inline-block;
+    text-align: left;
+    max-width: 400px; /* Adjust the maximum width as needed */
+    width: 100%;
+    margin: 0 auto;
+}
