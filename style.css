@@ -154,3 +154,23 @@ p {
     padding: 10px;
     border-radius: 5px;
 }
+
+/* Center the Projects section */
+#projects {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#projects h2 {
+    font-size: 24px;
+}
+
+#projects ul {
+    list-style: none;
+    padding: 0;
+}
+
+#projects li {
+    font-size: 18px;
+    margin: 5px 0;
+}
