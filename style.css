@@ -51,22 +51,34 @@ li {
     margin: 5px 0;
 }
 
-/* Style the table */
-table {
-    width: 100%;
+/* Style the contact section as a table */
+#contact {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#contact h2 {
+    font-size: 24px;
+}
+
+/* Style the contact table */
+#contact table {
+    width: 60%; /* Adjust the width as needed */
+    margin: 0 auto;
     border-collapse: collapse;
     margin-top: 10px;
 }
 
-th, td {
+#contact th, #contact td {
     padding: 10px;
     border: 1px solid #ccc;
 }
 
-th {
+#contact th {
     background-color: #f2f2f2;
     font-weight: bold;
 }
+
 
 /* Center the image */
 #image img {
