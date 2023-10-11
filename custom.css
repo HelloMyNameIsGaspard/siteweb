@@ -1,57 +1,27 @@
-/* Add custom styles here */
-
-/* Style the header with a background image */
-header {
-    background-image: url('your-background-image.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 100px 0;
+/* Center all text elements horizontally */
+body, p, h1, h2, ul, li, th, td, a {
     text-align: center;
+}
+
+/* Set the background color to white and text color to grey and black */
+body {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Style the header with a dark background and white text */
+header {
+    background-color: #333;
     color: #fff;
 }
 
-/* Style the h1 in the header */
-header h1 {
-    font-size: 36px;
-}
-
-/* Add some padding to the main content */
-main {
-    padding: 20px;
-}
-
-/* Style the section with a subtle background color and rounded corners */
-section {
-    background-color: #f7f7f7;
-    border-radius: 5px;
-    padding: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-}
-
-/* Style the h2 in the section */
-section h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-/* Style the list items in the section */
-section ul li {
-    list-style: disc;
-    margin-left: 20px;
-}
-
-/* Adjust the paragraph text size */
-p {
-    font-size: 16px;
-}
-
-/* Style hyperlinks with a custom color */
+/* Style links with a dark color and remove underlines */
 a {
-    color: #007bff;
+    color: #333;
     text-decoration: none;
 }
 
-/* Change the color of hyperlinks when hovered */
+/* Change link color to a darker shade on hover */
 a:hover {
-    color: #0056b3;
+    color: #111;
 }
