@@ -1,22 +1,34 @@
-/* Center the navigation bar and remove bullet points */
+/* Style the navigation bar */
 .navbar {
+  background-color: #333; /* Set the background color */
   display: flex;
-  justify-content: space-between; /* Space between the buttons */
-  background-color: white;
+  justify-content: space-between; /* Push buttons to opposite corners */
+  align-items: center; /* Center vertically */
+  padding: 10px; /* Add some padding for spacing */
 }
+
+/* Style the left button */
+.nav-button.left {
+  background-color: #555; /* Set the button's background color */
+  color: white; /* Set the text color */
+  padding: 10px 20px; /* Set padding for the button */
+  text-decoration: none; /* Remove underlines from links */
+  border-radius: 5px; /* Round the button corners */
+}
+
+/* Style the right button */
+.nav-button.right {
+  background-color: #555; /* Set the button's background color */
+  color: white; /* Set the text color */
+  padding: 10px 20px; /* Set padding for the button */
+  text-decoration: none; /* Remove underlines from links */
+  border-radius: 5px; /* Round the button corners */
+}
+
 
 .navbar-menu {
   list-style-type: none; /* Remove bullet points */
   padding: 0;
-}
-
-.nav-item.left {
-  /* Nothing specific required here, it's already at the top left */
-}
-.nav-item.right {
-  background-color: #333; /* Set the background color */
-  text-align: right; /* Align text to the right */
-  padding: 10px; /* Add some padding for spacing */
 }
 
 
