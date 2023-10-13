@@ -364,3 +364,47 @@ body, ul, li {
     cursor: pointer;
 }
 
+/* Reset some default styles and set the font */
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Arial, sans-serif;
+}
+
+/* Style for the centered navigation bar */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-button {
+    text-decoration: none;
+    color: #fff;
+    background-color: #007BFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.nav-button:hover {
+    background-color: #0056b3;
+}
+
+/* Style for the "Projects" page link in the navigation bar */
+.nav-button.projects-link {
+    background-color: #009933;
+}
+
+.nav-button.projects-link:hover {
+    background-color: #006622;
+}
