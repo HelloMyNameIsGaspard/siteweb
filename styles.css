@@ -1,0 +1,56 @@
+/* Center the navigation bar, make it look like buttons, and make it white */
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+.nav-button {
+  background-color: white;
+  padding: 10px 20px;
+  border: 1px solid #333;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+/* Center all text in the header */
+.header {
+  text-align: center;
+  background-color: #333;
+  color: white;
+}
+
+/* Center the image and make it smaller */
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 40%;
+  border: 2px solid #333;
+  border-radius: 50%;
+}
+
+/* Center all text after the image */
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Style the contact information table */
+table {
+  width: 50%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #333;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #333;
+  color: white;
+}
+
