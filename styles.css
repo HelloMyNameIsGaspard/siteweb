@@ -1,8 +1,10 @@
-/* Center the navigation bar, make it look like buttons, and make it white */
+/* Center the navigation bar and remove bullet points */
 .navbar {
   display: flex;
   justify-content: center;
   background-color: white;
+  list-style-type: none; /* Remove bullet points */
+  padding: 0;
 }
 
 .nav-button {
@@ -19,14 +21,14 @@
   text-align: center;
   background-color: #333;
   color: white;
-  font-size: 24px; /* Increase font size for the bio text */
+  font-size: 24px;
 }
 
 /* Center the image and make it smaller */
 img {
   display: block;
   margin: 0 auto;
-  max-width: 30%; /* Make the image smaller */
+  max-width: 30%;
   border: 2px solid #333;
   border-radius: 50%;
 }
@@ -35,7 +37,7 @@ img {
 .container {
   text-align: center;
   padding: 20px;
-  font-size: 18px; /* Increase font size for the bio text */
+  font-size: 18px;
 }
 
 /* Style the contact information table */
