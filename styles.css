@@ -3,17 +3,21 @@
   display: flex;
   justify-content: center;
   background-color: white;
+}
+
+.navbar-menu {
   list-style-type: none; /* Remove bullet points */
   padding: 0;
 }
 
 .nav-button {
+  display: inline-block; /* Display buttons inline-block to have them next to each other */
   background-color: white;
   padding: 10px 20px;
   border: 1px solid #333;
-  margin: 0 10px;
   text-decoration: none;
   color: #333;
+  margin-right: 10px; /* Add margin to separate the buttons */
 }
 
 /* Center all text in the header */
