@@ -2,6 +2,19 @@
     text-align: center;
 }
 
+.nav-button:hover {
+    background-color: #0056b3; /* Change background color on hover */
+}
+
+.nav-button {
+    display: inline-block; /* Display the links as blocks */
+    padding: 10px 20px;    /* Add some padding to create button-like space */
+    text-decoration: none; /* Remove underline from links */
+    background-color: #007bff; /* Set background color for the buttons */
+    color: #fff;          /* Set text color to white */
+    border-radius: 5px;   /* Add rounded corners */
+    margin-right: 10px;   /* Add some spacing between buttons */
+}
 
 
 /* Center all text in the header */
