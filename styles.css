@@ -37,7 +37,7 @@ img {
 /* Center all text after the image and increase font size */
 .container {
   text-align: center;
-  padding: 20px;
+  padding: 0 20px
   font-size: 30px;
 }
 
