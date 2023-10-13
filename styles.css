@@ -19,21 +19,23 @@
   text-align: center;
   background-color: #333;
   color: white;
+  font-size: 24px; /* Increase font size for the bio text */
 }
 
 /* Center the image and make it smaller */
 img {
   display: block;
   margin: 0 auto;
-  max-width: 40%;
+  max-width: 30%; /* Make the image smaller */
   border: 2px solid #333;
   border-radius: 50%;
 }
 
-/* Center all text after the image */
+/* Center all text after the image and increase font size */
 .container {
   text-align: center;
   padding: 20px;
+  font-size: 18px; /* Increase font size for the bio text */
 }
 
 /* Style the contact information table */
@@ -53,4 +55,3 @@ th {
   background-color: #333;
   color: white;
 }
-
