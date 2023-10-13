@@ -13,19 +13,22 @@
 .nav-item.left {
   /* Nothing specific required here, it's already at the top left */
 }
-
 .nav-item.right {
-  /* Nothing specific required here, it's already at the top right */
-  text-align: right; /* Right-align the "Projects" button */
+  background-color: #333; /* Set the background color */
+  text-align: right; /* Align text to the right */
+  padding: 10px; /* Add some padding for spacing */
 }
 
+
+/* Style the button */
 .nav-button {
-  background-color: white;
-  padding: 10px 20px;
-  border: 1px solid #333;
-  text-decoration: none;
-  color: #333;
+  background-color: #555; /* Set the button's background color */
+  color: white; /* Set the text color */
+  padding: 10px 20px; /* Set padding for the button */
+  text-decoration: none; /* Remove underlines from links */
+  border-radius: 5px; /* Round the button corners */
 }
+
 
 /* Center all text in the header */
 .header {
