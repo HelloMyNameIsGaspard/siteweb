@@ -20,9 +20,11 @@
 /* Center all text in the header */
 .header {
   text-align: center;
-  background-color: #333;
   color: white;
   font-size: 24px;
+  padding: 20px;            /* Add padding to the header */
+  background-color: #ccc;   /* Set a grey background color */
+  border-radius: 10px;      /* Add rounded corners */
 }
 
 /* Center the image and make it smaller */
