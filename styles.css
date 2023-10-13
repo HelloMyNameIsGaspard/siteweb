@@ -10,6 +10,10 @@
   padding: 0;
 }
 
+.nav-item {
+  display: inline; /* Display list items inline */
+}
+
 .nav-button {
   display: inline-block; /* Display buttons inline-block to have them next to each other */
   background-color: white;
