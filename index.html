@@ -6,37 +6,34 @@
     <link rel="stylesheet" href="style.css">
     <title>Gaspard Andre - Biography</title>
 </head>
-    
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">My Website</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="#image">Home page</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="binaryconverter.html">Binary converter</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-            </li>
-        </ul>
-    </div>
-</nav>
-
 <body>
-     <header class="bg-dark text-white text-center py-4">
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a class="navbar-brand" href="#">My Website</a>
+            <ul class="navbar-menu">
+                <li class="nav-item">
+                    <a class="nav-link" href="#image">Home page</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="binaryconverter.html">Binary converter</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="bg-dark text-white text-center py-4">
         <h1>Gaspard Andre</h1>
         <p>Age: 15 | Nationality: French</p>
     </header>
+
     <main class="container my-4">
         <section id="image" class="text-center">
             <img src="pixton-avatar-headshot-gaspard.png" alt="Gaspard Andre" width="50%" class="rounded-circle">
         </section>
-        
+
         <section class="my-4">
             <p>
                 My name is Gaspard Andre. I'm a curious and passionate individual at the age of fifteen, proud to be French. I have a wide range of interests, which include: Mathematics, Physics, Chess, Football, Video Games, Basketball, and Coding. I find joy in exploring these subjects, and my pursuit of knowledge is driven by my genuine enthusiasm and the desire to learn more about the world around me. I appreciate the beauty of science, the thrill of sports, and the challenges of coding, making each endeavor a valuable part of my personal journey.
@@ -45,10 +42,10 @@
 
         <section id="projects" class="my-4">
             <h2>Projects</h2>
-            <div class="list-group">
-                <a href="binaryconverter.html" class="list-group-item list-group-item-action">Decimal to Binary Converter</a>
-                <a href="decimalconverter.html" class="list-group-item list-group-item-action">Binary to Decimal Converter</a>
-            </div>
+            <ul>
+                <li>Decimal to Binary Converter</li>
+                <li>Binary to Decimal Converter</li>
+            </ul>
         </section>
 
         <section id="contact" class="my-4">
@@ -65,6 +62,5 @@
             </table>
         </section>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.7.0/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
