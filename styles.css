@@ -1,7 +1,7 @@
 /* Center the navigation bar and remove bullet points */
 .navbar {
   display: flex;
-  justify-content: center;
+  justify-content: space-between; /* Space between the buttons */
   background-color: white;
 }
 
@@ -10,18 +10,21 @@
   padding: 0;
 }
 
-.nav-item {
-  display: inline; /* Display list items inline */
+.nav-item.left {
+  /* Nothing specific required here, it's already at the top left */
+}
+
+.nav-item.right {
+  /* Nothing specific required here, it's already at the top right */
+  text-align: right; /* Right-align the "Projects" button */
 }
 
 .nav-button {
-  display: inline-block; /* Display buttons inline-block to have them next to each other */
   background-color: white;
   padding: 10px 20px;
   border: 1px solid #333;
   text-decoration: none;
   color: #333;
-  margin-right: 10px; /* Add margin to separate the buttons */
 }
 
 /* Center all text in the header */
