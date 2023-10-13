@@ -60,3 +60,20 @@ th {
   background-color: #333;
   color: white;
 }
+
+/* styles.css */
+.project-button {
+    display: block; /* Make the buttons a block element */
+    width: 100%;    /* Full width of the container */
+    padding: 20px;   /* Add padding for button spacing */
+    text-align: center; /* Center the button text */
+    background-color: #007bff; /* Set background color for the buttons */
+    color: #fff;    /* Set text color to white */
+    text-decoration: none; /* Remove underline from links */
+    border-radius: 10px;  /* Add rounded corners */
+    margin-bottom: 10px; /* Add space between buttons */
+}
+
+.project-button:hover {
+    background-color: #0056b3; /* Change background color on hover */
+}
