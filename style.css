@@ -304,3 +304,63 @@ body, ul, li {
     list-style-type: disc;
     margin-left: 20px;
 }
+
+/* Reset some default styles and set the font */
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Arial, sans-serif;
+}
+
+/* Style for the navigation bar */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar-menu {
+    display: flex;
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Style for the "Projects" section */
+#projects ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Style for clickable links in the Projects section */
+#projects ul li a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+/* Change the cursor to a pointer for clickable links */
+#projects ul li a:hover {
+    cursor: pointer;
+}
+
