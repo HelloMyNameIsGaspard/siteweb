@@ -187,3 +187,15 @@ html, body {
 #attribution, #attribution a {
     color: #999;
 }
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.big-text {
+    font-size: 3em; /* Adjust the font size as needed */
+}
