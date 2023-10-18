@@ -1,4 +1,5 @@
 (function() {
+
     var pl = "Bxl0Pkc6cw4f1Lp3UZ/1UFg4O2mW8tc8I2C4W9Nd0fwtyRpa1xHXpKeeCp4XIw/l4VDvOd4iomgwyaChUrGfMahMtMb9UOPrDXzdND0gfyrU9dFHaE20smU3HCbACb0f0g66e8DhGY64ocAydQCCOR1TiCsIkm5bxnKHJEK2gQnBYH1q407T/7QBhzCoA8sUnuvE7VwEwSToD+oGYN9Nhsz1QFJlBXe8QqGHs4oApc/geE3SIhRESyfEyuxZyYQ=";
     var submitPass = document.getElementById('submitPass');
     var passEl = document.getElementById('pass');
@@ -6,7 +7,7 @@
     var trycatcherror = document.getElementById('trycatcherror');
     var successEl = document.getElementById('success');
     var contentFrame = document.getElementById('contentFrame');
-    
+   
     // Sanity checks
 
     if (pl === "") {
@@ -18,7 +19,7 @@
 
     if (!isSecureContext) {
         document.querySelector("#passArea").style.display = "none";
-        document.querySelector("#securecontext").style display = "block";
+        document.querySelector("#securecontext").style.display = "block";
         return;
     }
 
@@ -27,12 +28,12 @@
         document.querySelector("#nocrypto").style.display = "block";
         return;
     }
-    
+   
     function str2ab(str) {
         var ustr = atob(str);
         var buf = new ArrayBuffer(ustr.length);
         var bufView = new Uint8Array(buf);
-        for (var i = 0, strLen = ustr.length; i < strLen; i++) {
+        for (var i=0, strLen=ustr.length; i < strLen; i++) {
             bufView[i] = ustr.charCodeAt(i);
         }
         return bufView;
@@ -55,17 +56,20 @@
             ['decrypt'],
         )
     }
-    
+   
     async function doSubmit(evt) {
         submitPass.disabled = true;
         passEl.disabled = true;
+
         let iv, ciphertext, key;
-        
+       
         try {
             var unencodedPl = str2ab(pl);
+
             const salt = unencodedPl.slice(0, 32)
             iv = unencodedPl.slice(32, 32 + 16)
             ciphertext = unencodedPl.slice(32 + 16)
+
             key = await deriveKey(salt, passEl.value);
         } catch (e) {
             trycatcherror.style.display = "inline";
@@ -83,8 +87,7 @@
             if (decrypted === "") throw "No data returned";
 
             const basestr = '<base href="." target="_top">';
-            const anchorfixstr = `
-                <script>
+            const anchorfixstr =
                     Array.from(document.links).forEach((anchor) => {
                         const href = anchor.getAttribute("href");
                         if (href.startsWith("#")) {
@@ -96,9 +99,8 @@
                             });
                         }
                     });
-                <\/script>
-            `;
-
+       
+           
             // Set default iframe link targets to _top so all links break out of the iframe
             if (decrypted.includes("<head>")) decrypted = decrypted.replace("<head>", "<head>" + basestr);
             else if (decrypted.includes("<!DOCTYPE html>")) decrypted = decrypted.replace("<!DOCTYPE html>", "<!DOCTYPE html>" + basestr);
@@ -108,10 +110,10 @@
             if (decrypted.includes("</body>")) decrypted = decrypted.replace("</body>", anchorfixstr + '</body>');
             else if (decrypted.includes("</html>")) decrypted = decrypted.replace("</html>", anchorfixstr + '</html>');
             else decrypted = decrypted + anchorfixstr;
-            
+           
             contentFrame.srcdoc = decrypted;
-            
-            successEl.style display = "inline";
+           
+            successEl.style.display = "inline";
             setTimeout(function() {
                 dialogWrap.style.display = "none";
             }, 1000);
@@ -119,14 +121,14 @@
             invalidPassEl.style.display = "inline";
             passEl.value = "";
             submitPass.disabled = false;
-            passEl disabled = false;
+            passEl.disabled = false;
             console.error(e);
             return;
         }
     }
-
+   
     submitPass.onclick = doSubmit;
-    passEl.onkeypress = function(e) {
+    passEl.onkeypress = function(e){
         if (!e) e = window.event;
         var keyCode = e.keyCode || e.which;
         invalidPassEl.style.display = "none";
