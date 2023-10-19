@@ -1,47 +1,91 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gaspard Andre - Biography</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
-    <div class="topnav">
-    <a class="nav-button" href="index.html">Home</a>
-    <a class="nav-button" href="projects.html">Projects</a>
-    <a class="nav-button" href="members-protected.html">Login</a>
-    </div>
+/* Set background color for the top navigation buttons to black */
+.nav-button {
+    background-color: #000;
+}
 
-    <header class="header">
-        <h1>Gaspard Andre</h1>
-        <p>Age: 15 | Nationality: French</p>
-    </header>
+/* Set header background color to grey and text color to white */
+.header {
+    background-color: #666;
+    color: #fff;
+    font-size: 24px;
+    padding: 20px; /* Add padding to the header */
+    border-radius: 10px; /* Add rounded corners */
+}
 
-    <main class="container my-4">
-        <section id="image" class="text-center">
-            <img src="pixton-avatar-headshot-gaspard.png" alt="Gaspard Andre">
-        </section>
+/* Reduce the size of the image and add spacing to the container */
+img {
+    display: block;
+    margin: 20px auto; /* Adjust margin to control spacing */
+    max-width: 15%; /* Reduce the size of the image */
+    border: 2px solid #000; /* Set border color to black */
+    border-radius: 50%;
+}
 
-        <section class="my-4">
-            <p>
-                My name is Gaspard Andre. I'm a curious and passionate individual at the age of fifteen, proud to be French. I have a wide range of interests, which include: Mathematics, Physics, Chess, Football, Video Games, Basketball, and Coding. I find joy in exploring these subjects, and my pursuit of knowledge is driven by my genuine enthusiasm and the desire to learn more about the world around me. I appreciate the beauty of science, the thrill of sports, and the challenges of coding, making each endeavor a valuable part of my personal journey.
-            </p>
-        </section>
+/* Set global styling for the page */
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #666; /* Set a global background color */
+    color: #fff; /* Set text color to white */
+}
 
-        <section id="contact" class="my-4">
-            <h2>Contact Information</h2>
-            <table class="table table-bordered table-striped">
-                <tr>
-                    <th>Email:</th>
-                    <td>andreg@lyceechurchill.london</td>
-                </tr>
-                <tr>
-                    <th>Number:</th>
-                    <td>07774259562</td>
-                </tr>
-            </table>
-        </section>
-    </main>
-</body>
-</html>
+.topnav {
+    text-align: center;
+}
+
+.nav-button:hover {
+    background-color: #999; /* Change background color on hover */
+}
+
+.nav-button {
+    display: inline-block; /* Display the links as blocks */
+    padding: 10px 20px; /* Add some padding to create button-like space */
+    text-decoration: none; /* Remove underline from links */
+    background-color: #333; /* Set background color for the buttons */
+    color: #fff; /* Set text color to white */
+    border-radius: 5px; /* Add rounded corners */
+    margin-right: 10px; /* Add some spacing between buttons */
+}
+
+/* Center all text in the header */
+.container {
+    text-align: center;
+    padding: 0 20px;
+    font-size: 30px;
+}
+
+/* Style the contact information table */
+table {
+    width: 50%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #333;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+.project-button {
+    display: block; /* Make the buttons a block element */
+    width: 100%; /* Full width of the container */
+    padding: 20px; /* Add padding for button spacing */
+    text-align: center; /* Center the button text */
+    background-color: #007bff; /* Set background color for the buttons */
+    color: #fff; /* Set text color to white */
+    text-decoration: none; /* Remove underline from links */
+    border-radius: 10px; /* Add rounded corners */
+    margin-bottom: 10px; /* Add space between buttons */
+}
+
+.project-button:hover {
+    background-color: #0056b3; /* Change background color on hover */
+}
