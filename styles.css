@@ -33,14 +33,18 @@ html, body {
 }
 
 .topnav {
-    text-align: center;
+    position: fixed;  /* Fixed positioning to keep it at the top */
+    top: 0;           /* Position it at the top of the viewport */
+    left: 0;          /* Position it at the left of the viewport */
+    right: 0;         /* Position it at the right of the viewport */
+    z-index: 100;     /* Ensure it's above other page content */
 }
-
 .nav-button:hover {
     background-color: #999; /* Change background color on hover */
 }
 
 .nav-button {
+    text-align: center;
     display: inline-block; /* Display the links as blocks */
     padding: 10px 20px; /* Add some padding to create button-like space */
     text-decoration: none; /* Remove underline from links */
@@ -92,6 +96,7 @@ th {
 }
 
 html, body {
+    text-align: center;
     margin: 0;
     width: 100%;
     height: 100%;
