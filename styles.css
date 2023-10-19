@@ -6,8 +6,8 @@
 /* Set header background color to grey and text color to white */
 .header {
     text-align: center;
-    background-color: #666;
-    color: #fff;
+    background-color: #FFFFFF;
+    color: #000
     font-size: 24px;
     padding: 20px; /* Add padding to the header */
     border-radius: 10px; /* Add rounded corners */
@@ -28,8 +28,8 @@ html, body {
     width: 100%;
     height: 100%;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #666; /* Set a global background color */
-    color: #fff; /* Set text color to white */
+    background-color: #FFFFFF; /* Set a global background color */
+    color: #000/* Set text color to white */
 }
 
 .topnav {
