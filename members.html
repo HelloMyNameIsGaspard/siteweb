@@ -1,9 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Member Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        #home-link {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
 </head>
 <body>
-    <h1 class="big-text">HELLO MEMBER</h1>
+    <a id="home-link" href="index.html">Home</a>
+    <div class="container">
+        <h1>Welcome Member</h1>
+    </div>
 </body>
 </html>
