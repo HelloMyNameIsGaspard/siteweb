@@ -211,3 +211,46 @@ html, body {
     display: none;
     color: red;
 }
+
+/* Center everything */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Arial', sans-serif; /* Change 'Arial' to your preferred font */
+}
+
+/* Style the header and button */
+header {
+  text-align: center;
+  font-size: 24px;
+}
+
+#convertButton {
+  background-color: #007BFF; /* Change to your preferred color */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+/* Style the "Return" link as a button */
+#return a {
+  display: inline-block;
+  background-color: #007BFF; /* Change to your preferred color */
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+/* Style the "Return" link hover effect */
+#return a:hover {
+  background-color: #0056b3; /* Change to a slightly darker shade on hover */
+}
