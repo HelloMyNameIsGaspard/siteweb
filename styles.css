@@ -91,6 +91,11 @@ th {
     margin-bottom: 10px; /* Add space between buttons */
 }
 
+.my-4 {
+  margin: 0 20px; /* Adjust this value as needed for your desired margin. */
+}
+
+
 .project-button:hover {
     background-color: #999; /* Change background color on hover */
 }
